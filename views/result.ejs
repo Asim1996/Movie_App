@@ -1,4 +1,33 @@
-<h1>Results Page</h1>
-<%data["Search"].forEach(function(movie){ %>
-<li><%=movie["Title"]%>- <%=movie["Year"]%>  </li>
-<% }) %>
+<% include ./partials/header %>
+<div class="container-fluid">
+    <div class="row">
+  <div class="col-md-5">
+      <h1 style="text-align:center;color:white"><%=data.Title%><span style="font-size:1.5rem">(<%=data.Year%>)</span></h1>
+      <ul class="list-group">
+  <li class="list-group-item">Rated:<span><%=data.Rated%></span></li>
+  <li class="list-group-item">Runtime:<span><%=data.Runtime%></span></li>
+  <li class="list-group-item">Genre:<span><%=data.Genre%></span></li>
+  <li class="list-group-item">Released:<span><%=data.Released%></span></li>
+  <li class="list-group-item">Director:<span><%=data.Director%></span></li>
+  <li class="list-group-item">Writer:<span><%=data.Writer%></span></li>
+  <li class="list-group-item">Cast:<span><%=data.Actors%></span></li>
+    <li class="list-group-item">Awards:<span><%=data.Awards%></span></li>
+    
+  <li class="list-group-item"><h3>Rating</h3>Imdb:<span class="badge badge-pill badge-info"><%=data.imdbRating%></span></li>
+  <li class="list-group-item">Metascore:<span class="badge badge-pill badge-info"><%=data.Metascore%></span></li>
+  
+    </ul>
+  </div>
+  <div class="col-md-7">
+    <div class="card mb-3">
+  <img class="card-img-top img-thumbnail img-fluid" src=<%=data.Poster%> alt="Movie Poster">
+  <div class="card-body">
+    <h5 class="card-title">Storyline</h5>
+    <p class="card-text"><%=data.Plot%></p>
+    <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+  </div>
+</div>
+</div>
+    </div>
+    
+<% include ./partials/footer %>

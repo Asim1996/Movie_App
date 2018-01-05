@@ -1,5 +1,29 @@
-<h1>Movie Search Page</h1>
-<form action="/result" method="GET">
-<input type="text" placeholder="enter query" name="search"></input>
-<input type="submit"></input>    
+<% include ./partials/header %>
+
+<div class="container">
+	<h1 class="title">Movie App</h1>
+<form id="form-container">
+<div class="input-group">
+	<input type="text" class="form-control" id="movietitle" value="" placeholder="Enter Movie Name" >
+      <span class="input-group-btn">
+       <button  class="btn btn-search" type="submit"><i class="fa fa-search fa-fw"></i> Search</button>
+        </span>
+</div>
 </form>
+<h3 id="err"></h3>
+<h3 id="movieres"></h3>	
+ <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Year</th>
+      <th scope="col"></th>
+      </tr>
+  </thead>
+  </table>
+</div>
+
+
+
+<% include ./partials/footer %>

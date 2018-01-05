@@ -1,0 +1,66 @@
+    html {
+  	margin: 50px auto;
+	}
+	 body{
+    background:#232323;
+	 }
+	.title{
+		text-align: center;
+		margin-bottom: 3%;
+		color:white;
+	}
+	#err{
+		text-align:center;
+		margin-top:3%;
+		color:white;
+	}
+	#movieres{
+		text-align:center;
+		margin-top:2%;
+		display:none;
+		color:white;
+	}
+.btn-search {
+	  background: #3860EC;
+	  border-radius:0;
+	  color: #fff;
+	  border-width: 1px;
+	  border-style: solid;
+	  border-color: #1c1c1c;
+	}
+	.btn-search:link, .btn-search:visited {
+	  color: #fff;
+	}
+	.btn-search:active, .btn-search:hover {
+	  background: #1c1c1c;
+	  color: #fff;
+	}
+	table{
+		display:none;
+	}
+	.list-group{
+	    width:70%;
+	    margin-left: 15%;
+	}
+	.list-group-item{
+	    font-weight:bold;
+	}
+	span{
+	    color:grey;
+	    margin-left: 2%;
+	}
+	th,td{
+		font-weight: bold;
+		color: white;
+	}
+	thead{
+		background-color: steelblue
+		}
+@media only screen and (max-width: 768px) {
+    .list-group{
+    	width:100%;
+    	margin-left: 0;
+    	margin-bottom: 2%;
+    	
+    }
+}
